@@ -5,7 +5,9 @@ import 'package:configure/jsonView/roomSize.dart';
 import 'package:configure/global.dart';
 
 
-String url="http://192.168.8.102:9004/kafka";
+
+Global global =new Global() ;
+String url=global.serverUrl;
 
 Future<List<Appliance>> getappliance() async {
   var response = await http.get(url+"/aptype");
