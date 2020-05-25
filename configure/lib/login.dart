@@ -76,7 +76,7 @@ class LoginScreen extends StatelessWidget{
                 ),obscureText: true),
                 SizedBox(height: 20,),
                 RaisedButton(onPressed: (){
-                      if(userId=='user' && password=='password'){
+                      if(userId=='user' && password=='1234'){
                       Navigator.pushAndRemoveUntil(
                       context,
                       MaterialPageRoute(builder: (context) => HomeScreen()),

@@ -10,7 +10,7 @@ Global global =new Global() ;
 String url=global.serverUrl;
 
 Future<List<Appliance>> getappliance() async {
-  var response = await http.get(url+"/aptype");
+  var response = await http.get(url+"/kafka/aptype");
 
   if (response.statusCode == 200) {
     final items = json.decode(response.body).cast<Map<String, dynamic>>();
@@ -25,7 +25,7 @@ Future<List<Appliance>> getappliance() async {
 }
 
 Future<List<RoomSize>> getRoomSize() async {
-  var response = await http.get(url+"/roomsize");
+  var response = await http.get(url+"/kafka/roomsize");
 
 
   if (response.statusCode == 200) {

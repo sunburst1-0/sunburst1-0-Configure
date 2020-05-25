@@ -47,7 +47,7 @@ class _SplashScreenState extends State<SplashScreen> {
           children: <Widget>[
             Opacity(
                 opacity: 1,
-                child:Image.asset('assets/tempurature.png'))
+                child:Image.asset('assets/icon.png'))
           ],
         ),
       ),

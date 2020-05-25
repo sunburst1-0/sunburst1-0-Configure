@@ -1,10 +1,10 @@
 
 class Global{
 
- String serverUrl="http://161.35.48.202:9004/kafka";
+ String serverUrl="http://165.227.25.172:9004";
 
   Global({
-    this.serverUrl="http://161.35.48.202:9004/kafka"
+    this.serverUrl="http://165.227.25.172:9004"
 
   });
 
