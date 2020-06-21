@@ -11,7 +11,7 @@ Future<List<SubMessage>> getmessage() async {
   var response = await http.get(url+"/warn/all");
 
   if (response.statusCode == 200) {
-    final items = json.decode(response.body).cast<Map<String, dynamic>>();
+    final items = json.decode(response.body).cast<Map<Object, dynamic>>();
     List<SubMessage> listOfapplianceTypes = items.map<SubMessage>((json) {
       return SubMessage.fromJson(json);
     }).toList();

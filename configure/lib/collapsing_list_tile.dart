@@ -25,16 +25,17 @@ class _CollapsingListTileState extends State<CollapsingListTile> {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(16.0)),
-          color: widget.isSelected ? Colors.transparent.withOpacity(0.3): Colors.transparent,
+          color: widget.isSelected ? Colors.transparent.withOpacity(1): Colors.deepPurpleAccent[100],
         ),
         margin: EdgeInsets.symmetric(horizontal: 8.0),
         padding: EdgeInsets.symmetric(horizontal: 8.0,vertical: 8.0),
         child: Row(
             children: <Widget>[
-            Icon(widget.icon, color:widget.isSelected ? selectedColor :Colors.white30,size:38.0),
-            Text(widget.title,style: widget.isSelected?
-            listTitleSelectedStyle:
-            listTitleDefaultStyle,),
+            Icon(widget.icon, color:widget.isSelected ? selectedColor :Colors.white,size:38.0),
+            Text(
+              widget.title,
+              //style: widget.isSelected? listTitleSelectedStyle: listTitleDefaultStyle,
+            ),
             SizedBox(width:10.0),
 
 

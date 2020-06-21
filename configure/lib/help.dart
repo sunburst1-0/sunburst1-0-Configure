@@ -21,7 +21,9 @@ class Help extends StatelessWidget {
               }
           )
         ],
-        title: Center(child: Text("help")),
+ 
+        title: Center(child: Text("Help",style: TextStyle(fontSize: 25,fontFamily: 'bebas',color: Colors.deepPurple,letterSpacing: 2.0),)),
+        backgroundColor: Colors.deepPurple[200],
       ),
       body: Center(
 

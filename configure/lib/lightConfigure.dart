@@ -21,7 +21,9 @@ class LightConfig extends StatelessWidget {
               }
           )
         ],
-        title: Center(child: Text("light")),
+
+        title: Center(child: Text("Light Configuration",style: TextStyle(fontSize: 25,fontFamily: 'bebas',color: Colors.deepPurple,letterSpacing: 2.0),)),
+        backgroundColor: Colors.deepPurple[200],
       ),
       body: Center(
 
