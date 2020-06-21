@@ -37,7 +37,7 @@ class CollapsingNavigationDrawerState extends State<CollapsingNavigationDrawer>{
             width: double.infinity,
             padding: EdgeInsets.all(20),
 
-            color: Colors.deepPurple[200],
+           // color: Colors.deepPurple[200],
             margin: EdgeInsets.all(5),
             child: new Container(
               width: 150.0,
@@ -62,7 +62,7 @@ class CollapsingNavigationDrawerState extends State<CollapsingNavigationDrawer>{
 
           ),
 
-          Divider(color: Colors.grey,height: 10.0,),
+         // Divider(color: Colors.grey,height: 10.0,),
           //SizedBox(height: 10,),
           Expanded(
             child: ListView.separated(
