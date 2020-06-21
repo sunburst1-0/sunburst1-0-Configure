@@ -26,7 +26,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
 
   Future<bool> _mockCheckForSession() async{
-    await Future.delayed(Duration(microseconds: 5000), (){});
+    await Future.delayed(Duration(microseconds: 2000), (){});
     return true;
   }
 
@@ -46,7 +46,7 @@ class _SplashScreenState extends State<SplashScreen> {
           alignment: Alignment.center,
           children: <Widget>[
             Opacity(
-                opacity: 1,
+                opacity: 0,
                 child:Image.asset('assets/icon.png'))
           ],
         ),
