@@ -81,7 +81,8 @@ class ACConfig extends StatefulWidget {
                           fontFamily: 'roboto',
                           fontSize: 20.0,
                           fontWeight: FontWeight.bold,
-                          color: Colors.deepPurple,),
+                          color: Colors.deepPurple,
+                        ),
                       ),
                     ),
                     Expanded(
@@ -252,7 +253,7 @@ class ACConfig extends StatefulWidget {
             ),
             width: MediaQuery.of(context).size.height*.90,
             height: MediaQuery.of(context).size.height*.90,
-            color: Colors.deepPurple[100],
+          //  color: Colors.deepPurple[100],
           ),
         )
 

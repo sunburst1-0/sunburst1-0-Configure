@@ -36,26 +36,11 @@ class Warning extends State<HomeScreen> {
         .get(Uri.encodeFull(url), headers: {"Accept": "application/json"});
 
     setState(() {
-      var extractdata = json.decode(response.body);
-      data = extractdata;
+      data = json.decode(response.body);
+      //data = extractdata["result"];
     });
   }
 
-//  void onceSetupDropdown() async {
-//  //  subMessage =  getmessage();
-//    //applianceType =  getappliance();
-//    print("**********************");
-//
-//    setState(() {});
-//  }
-
-//  @override
-//  void initState() {
-//
-//    super.initState();
-//    onceSetupDropdown();
-//
-//  }
   @override
   void initState() {
     this.makeRequest();
@@ -234,128 +219,6 @@ class Warning extends State<HomeScreen> {
 
             }
         ),
-
-//      body: Center(
-//          child: Card(
-//            child: Container(
-//              padding: EdgeInsets.all(10),
-//              child: Column(
-//                crossAxisAlignment: CrossAxisAlignment.start,
-//                mainAxisSize: MainAxisSize.min,
-//                children: <Widget>[
-//                  SizedBox(height: 20,),
-//
-//                  Row(
-//                    children: <Widget>[
-//                      Expanded(
-//                        child: new Text(
-//                          'AC Name:',
-//                          style: TextStyle(
-//                            fontFamily: 'roboto',
-//                            fontSize: 20.0,
-//                            fontWeight: FontWeight.bold,
-//                            color: Colors.deepPurple,),
-//                        ),
-//                      ),
-//                      Expanded(
-//                        child: new TextField(
-//                          decoration: new InputDecoration(
-//                              border: OutlineInputBorder(
-//                                borderRadius: BorderRadius.circular(15.0),
-//                              )),
-//                        ),
-//                      )
-//                    ],
-//                  ),
-//                  SizedBox(height: 10,),
-//                  Row(
-//                    children: <Widget>[
-//                      Expanded(
-//                        child: new Text(
-//                          'Appliance Type:',
-//                          style: TextStyle(
-//                            fontFamily: 'roboto',
-//                            fontSize: 20.0,
-//                            fontWeight: FontWeight.bold,
-//                            color: Colors.deepPurple,),
-//                        ),
-//                      ),
-//
-//                    ],
-//                  ),
-//                  Row(
-//                    children: <Widget>[
-//                      Expanded(
-//                        child: new Text(
-//                          'Room Type:',
-//                          style: TextStyle(
-//                            fontFamily: 'roboto',
-//                            fontSize: 20.0,
-//                            fontWeight: FontWeight.bold,
-//                            color: Colors.deepPurple,),
-//                        ),
-//                      ),
-//
-//                    ],
-//                  ),
-//                  Text(
-//                      "AC Position:",
-//                      style:TextStyle(
-//                        color: Colors.deepPurple,
-//                        fontSize: 25,
-//                      )
-//                  ),
-//                  SizedBox(height: 10,),
-//                  Row(
-//                    children: <Widget>[
-//                      Expanded(
-//                        child: new Text(
-//                          'X:',
-//                          style: TextStyle(
-//                            fontFamily: 'roboto',
-//                            fontSize: 20.0,
-//                            fontWeight: FontWeight.bold,
-//                            color: Colors.deepPurple,),
-//                        ),
-//                      ),
-//                      Expanded(
-//                        child: new TextField(
-//                          decoration: new InputDecoration(
-//                              border: OutlineInputBorder(
-//                                borderRadius: BorderRadius.circular(15.0),
-//                              )),
-//                        ),
-//                      ),
-//                      SizedBox(width: 20,),
-//                      Expanded(
-//                        child: new Text(
-//                          'Y:',
-//                          style: TextStyle(
-//                            fontFamily: 'roboto',
-//                            fontSize: 20.0,
-//                            fontWeight: FontWeight.bold,
-//                            color: Colors.deepPurple,),
-//                        ),
-//                      ),
-//                      Expanded(
-//                        child: new TextField(
-//                          decoration: new InputDecoration(
-//                              border: OutlineInputBorder(
-//                                borderRadius: BorderRadius.circular(15.0),
-//                              )),
-//                        ),
-//                      )
-//                    ],
-//                  )
-//                ],
-//              ),
-//              width: MediaQuery.of(context).size.height*.90,
-//              height: MediaQuery.of(context).size.height*.90,
-//              color: Colors.deepPurple[100],
-//            ),
-//          )
-//
-//      ),
       drawer: CollapsingNavigationDrawer(),
     );
   }
@@ -394,7 +257,7 @@ class SecondPage extends StatelessWidget {
                   ]),
                   TableRow( children: [
                     Column(children:[
-           
+
                       Text('My Account')
                     ]),
 

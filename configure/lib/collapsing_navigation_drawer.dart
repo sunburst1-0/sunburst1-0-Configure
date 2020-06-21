@@ -36,10 +36,28 @@ class CollapsingNavigationDrawerState extends State<CollapsingNavigationDrawer>{
           Container(
             width: double.infinity,
             padding: EdgeInsets.all(20),
-            color: Colors.blueAccent,
+            color: Colors.deepPurple[200],
             margin: EdgeInsets.all(5),
-            child: Container(
-                child: Image(image: AssetImage('assets/icon.png'),)),
+            child: new Container(
+              width: 150.0,
+              height: 200.0,
+              decoration: new BoxDecoration(
+                  image: new DecorationImage(
+                      image: AssetImage('assets/icon.png'),
+                      fit: BoxFit.cover,
+                  ),
+                borderRadius: new BorderRadius.all(new Radius.circular(500.0)),
+                border: new Border.all(
+                  color: Colors.deepPurple,
+                  width: 5.0,
+                ),
+
+              ),
+
+              //  Image(image: AssetImage('assets/icon.png'),)
+
+            ),
+
           ),
 
           //Divider(color: Colors.grey,height: 50.0,),
