@@ -1,10 +1,10 @@
 
 class Global{
 
- String serverUrl="http://165.227.25.172:9004";
+ String serverUrl="http://34.67.44.93:9005";
 
   Global({
-    this.serverUrl="http://165.227.25.172:9004"
+    this.serverUrl="http://34.67.44.93:9005"
 
   });
 

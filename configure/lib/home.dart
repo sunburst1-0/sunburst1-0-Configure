@@ -11,8 +11,11 @@ import 'package:configure/jsonView/appliance.dart';
 import 'package:configure/Controller/ir_meta.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'package:configure/global.dart';
 
 
+Global global =new Global() ;
+String baseurl=global.serverUrl;
 
 class HomeScreen extends StatefulWidget {
 
@@ -31,7 +34,7 @@ class Warning extends State<HomeScreen> {
   double iconSize = 20;
 
 
-  String url = 'http://165.227.25.172:9004/warn/all';
+  String url = baseurl+'/warn/all';
   List data;
   Future<String> makeRequest() async {
     var response = await http
